@@ -88,7 +88,7 @@ def can_update_multiple_items_at_once
   5.times do |i|
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
   end
-  Movie.update(:title=>"A Movie").where("release_date < ?",2004)
+  Movie.update(:title=>"A Movie").where("release_date < ?", 2005)
 end
 
 def can_destroy_a_single_item
